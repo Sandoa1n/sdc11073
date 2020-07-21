@@ -53,7 +53,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -65,7 +65,6 @@ setup(
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
 
@@ -98,13 +97,10 @@ setup(
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
     package_data={
-        'sdc11073': ['examples/*.py',
-                  'examples/ReferenceTest/*.py',
-                  'examples/ReferenceTest/*.xml',
-                  'examples/ReferenceTest/*.jsn',
+        'sdc11073': [
+                  'LICENSE',
                   'xsd/*.xsd',
-                  'ca/*.*',
-                  'codings/*.csv'],
+                  'ca/*.*'],
     },
 
     # Although 'package_data' is the preferred approach, in some case you may
