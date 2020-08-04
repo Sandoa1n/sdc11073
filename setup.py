@@ -28,7 +28,7 @@ with open(os.path.join(here, 'sdc11073/version.py'), 'w') as v:
     v.write("#generated file!\nversion='{}'\n\ngitrev='''{}'''".format(version, gitrev))
     
 # Get the long description from the README file
-with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 dependencies = ['lxml>=2.3',
